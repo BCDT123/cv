@@ -1,10 +1,13 @@
 {
-  "name": "Brenda Carolina Del Toro Santana",
+  "name": "Brenda Del Toro",
+  "titleJob":"Front-End Developer",
+  "smDescription":"Exploring AI & QA | Advocate for Smart Innovation",
   "contact":{
         "detail": {
             "displayName": "Contact",
             "slug": "contact" 
         },
+        "address":"Ottawa, ON, Canada",
         "data":[
             { "name": "telephone", "data": "613 400 4051" },
             { "name": "gmail", "data": "brenda.carolina.dts@gmail.com" },

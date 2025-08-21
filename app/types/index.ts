@@ -14,12 +14,15 @@ export type DetailName = {
 };
 export type Profile = {
   name: string;
+  titleJob:string;
+  smDescription:string;
   contact: Contact;
   about: AboutData;
 };
 
 export type Contact = {
   detail: DetailName;
+  address: String
   data: ContactData[];
 };
 

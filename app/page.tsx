@@ -1,21 +1,60 @@
 import React from "react";
-import {  getName } from "@/app/lib/profile";
+//Icons 
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
+// import foto from "@/public/yo.png"
+import {  getName, getJobTitle, getSmDesc, getContactInfo } from "@/app/lib/profile";
+import { FcBusinesswoman } from "react-icons/fc";
 
 export default function Home() {
+
  const name: String = getName();
+ const job: String = getJobTitle();
+ const smDesc: String = getSmDesc();
+ 
+ function getContact(){
+    
+     const contactList = getContactInfo().map(item => { 
+       return (
+         item.url &&
+         <a key={item.name} 
+             href={item.url}
+             className="flex flex-row gap-3 hover:text-yellow-mustard"
+             target="_blank"
+             rel="noopener noreferrer"
+           >
+             {item.name==="leetcode" ? <SiLeetcode size={40} />
+             :item.name==="github"?<FaGithub size={40} />
+             :<FaLinkedinIn size={40}  />
+             }
+         </a>
+       )
+      });
+      return contactList
+   }
+ 
   // imagen breve info
      return ( 
-        <section className="flex flex-col items-center  gap-3  p-10  bg-aa">
-          <h2>Hello I'm</h2>
-          <h1 className="text-6xl uppercase text-orange_accent text-left text-balance text-pretty">{name}</h1>
-          <h3>Front-End Developer </h3>
-          <p>Exploring AI & QA | Advocate for Smart Innovation</p>
-          <div className="flex flex-col justify-start gap-2 ">
-            {/* {getContact()} */}
+       <section className="flex flex-row grow justify-center items-center">
+        <section className="flex flex-col justify-center items-center gap-5 m-10 ">
+          <h2 className="text-yellow-mustard text-4xl">Hello, I'm</h2>
+          <h1 className="text-6xl uppercase text-center text-bold text-balance text-pretty">{name}</h1>
+          <h3 className="text-green-wash text-2xl">{job}</h3>
+          {/* <p className="text-green-wash text-2xl text-center">{smDesc}</p> */}
+          <div className="flex flex-row justify-start gap-4 ">
+           {getContact()} 
           </div>
-    
-          <button> Download CV</button>
-   
+          <button className="rounded-lg bg-green-wash/30 tracking-widest uppercase shadow-xl px-4 py-3 hover:bg-yellow-mustard/50 hover:text-rose-sligth"> Download CV</button>
+          
         </section> 
+        <section className="justify-center items-center">
+           <FcBusinesswoman size={400} />     
+          {/* <img
+              src={foto.src}
+              alt="name"
+              className="object-bottom-right  max-w-2xl"
+          /> */}
+        </section>
+      </section>
     );
 }

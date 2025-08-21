@@ -1,6 +1,6 @@
 // Datos
 import profileData from "@/app/data/profile.json";
-import { ContactData, Contact,DetailName, Profile , SkillGroup, Language} from "@/app/types";
+import { ContactData, Contact, DetailName, Profile , SkillGroup, Language} from "@/app/types";
 
 //fetch data
 export function getProfile(): Profile {
@@ -11,6 +11,17 @@ export function getName(): String {
     return getProfile().name
 }
 
+export function getJobTitle(): String {
+    return getProfile().titleJob
+}
+
+export function getSmDesc(): String {
+    return getProfile().smDescription
+}
+
+export function getContact(): Contact{
+    return getProfile().contact
+}
 
 export function getContactInfo(): ContactData[] {
     return getProfile().contact.data
