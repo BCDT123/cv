@@ -1,0 +1,8 @@
+[
+    { "name": "telephone", "data": "613 400 4051" },
+    { "name": "gmail", "data": "brenda.carolina.dts@gmail.com" },
+    { "name": "leetcode", "url": "https://leetcode.com/u/bcdt123/" , "user":"/bcdt123"},
+    { "name": "linkein", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
+    { "name": "github", "url": "https://github.com/BCDT123","user":"/BCDT123" }
+   
+]

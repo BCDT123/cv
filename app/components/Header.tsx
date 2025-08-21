@@ -1,44 +1,55 @@
-"use client"; //creando el componente en el cliente para usar pathname
-import React from "react";
-import NavLink from "@/app/components/NavLink";
-import { usePathname } from "next/navigation";
-import categoriesData from "../data/categories.json"
-import { Category } from "../types"
-//import { FaGithub } from "react-icons/fa";
+
+// Componentes
+import ClientNavLinks from "@/app/components/ClientNavLinks";
+//Icons 
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiGmail, SiLeetcode } from "react-icons/si";
+import { BsFillTelephoneFill } from "react-icons/bs";
+// Tipos
+import { DetailName, Contact } from "@/app/types";
+
+import { getContactInfo, getCategoriesNames, getName } from "@/app/lib/profile";
 
 export default function Header() {
+  const categories: DetailName[] = getCategoriesNames();
 
-  const pathname = usePathname();
-  const categories : Category[] = categoriesData
-
-  function getCategories(){
-    const categorieslista = categories.map(categorie => { 
-      return (<li className="text-sm uppercase cursor-pointer">
-            <NavLink
-              href={`/${categorie.slug}`}
-              isActive={pathname.startsWith(`/${categorie.slug}`)}
-            >
-              {categorie.displayName}
-            </NavLink>
-          </li>)
+  function getContact(){
+    const contactList = getContactInfo().map(item => { 
+      return (
+        item.url?
+        <a key={item.name} 
+            href={item.url}
+            className="flex flex-row gap-3 text-gray-600"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {item.name==="leetcode" ? <SiLeetcode size={20} />
+            :item.name==="github"?<FaGithub size={20} />
+            :<FaLinkedinIn size={20}  />
+            }
+            <span> {item.user}</span>
+        </a>
+        :
+        <div key={item.name} className="flex flex-row  gap-3 text-gray-600">
+          {item.name==="telephone" ? <BsFillTelephoneFill size={20} /> : <SiGmail size={20} />}
+          <span> {item.data}</span>
+        </div>
+        
+      )
           }
 
     );
-     return categorieslista
+     return contactList
   }
 
   return (
-    <header className="flex flex-col w-full h-auto sticky top-0 z-20 ">
-     <section className="bg-gray-200 p-4 pt-10">
-      <div className="text-5xl uppercase text-gray-600 pb-3 text-center ">Brenda Carolina Del Toro Santana</div>
-      <div className="">
-        {/* <FaGithub size={40} color="black" />; */}
-        gmail
-      </div>
-    </section> 
-     <nav className="p-4 mr-10 ml-10">
-        <ul className="flex items-center justify-center gap-5">
-          {getCategories()}
+    <header className="flex flex-row items-center w-full h-auto sticky top-0 z-20 bg-gray-200 p-4 pr-10 pl-10 gap-3">
+    <div className="justify-self-start uppercase text-gray-600 text-xl tracking-widest">
+      <h5 >Brenda</h5>
+    </div>
+     <nav className="grow">
+        <ul className="flex justify-self-end gap-5">
+          <ClientNavLinks categories={categories} />
         </ul>
       </nav> 
     </header>

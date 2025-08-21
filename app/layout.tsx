@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto} from "next/font/google"
 import "./globals.css";
+// Componentes
 import Header from "@/app/components/Header";
 
 const roboto = Roboto({
@@ -31,7 +32,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body className={`${roboto.className}`}>
-        <Header />
+        <Header/>
         {children}
       </body>
     </html>

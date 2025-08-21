@@ -1,8 +1,7 @@
 [
-    { "displayName": "About", "slug": "about" },
+    { "displayName": "About", "slug": "" },
     { "displayName": "Experience", "slug": "experience" },
     { "displayName": "Proyects", "slug": "projects" },
     { "displayName": "Education", "slug": "education" },
-    { "displayName": "Skills", "slug": "skills" },
     { "displayName": "Blog", "slug": "blog" }
 ]

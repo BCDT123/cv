@@ -1,0 +1,52 @@
+{
+  "name": "Brenda Carolina Del Toro Santana",
+  "contact":{
+        "detail": {
+            "displayName": "Contact",
+            "slug": "contact" 
+        },
+        "data":[
+            { "name": "telephone", "data": "613 400 4051" },
+            { "name": "gmail", "data": "brenda.carolina.dts@gmail.com" },
+            { "name": "leetcode", "url": "https://leetcode.com/u/bcdt123/" , "user":"/bcdt123"},
+            { "name": "linkein", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
+            { "name": "github", "url": "https://github.com/BCDT123","user":"/BCDT123" }
+            ]
+        },
+  "about":{
+        "detail": {
+            "displayName": "About",
+            "slug": "about" 
+        },
+        "summary": "With over five years of experience in software development, I specialize in front-end development. Currently based in Ottawa, I am actively refreshing my skills and exploring new technologies, while also advancing my French at the Alliance Française. After a previous career pause dedicated to caring for my family, I am now ready to contribute a proactive, solutions-oriented approach to a team.",
+        "skills": [
+            {
+                "titulo": "Core Languages & Technologies",
+                "items": ["HTML","CSS","JavaScript","TypeScript","Java",".Net"]
+            }, 
+            {
+                "titulo": "Frameworks & Libraries",
+                "items": ["Jquery","React.js (Next.js, Vite)","Tailwind","Bootstrap"]
+            }, 
+            {
+                "titulo": "APIs & Data Handling",
+                "items": ["JSON and Promise handling","Fetch / Axios","RESTful APIs"]
+            }
+            ],
+        "languajes": [
+            {
+                "name": "English",
+                "nivel": "Professional"
+            }, 
+            {
+                "name": "Spanish",
+                "nivel": "Native"
+            },
+            {
+                "name": "French",
+                "nivel": "Elementary"
+            }
+            ]
+            
+        }
+}
