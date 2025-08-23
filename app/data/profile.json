@@ -8,14 +8,14 @@
             "slug": "contact" 
         },
         "address":"Ottawa, ON, Canada",
-        "data":[
-            { "name": "telephone", "data": "613 400 4051" },
-            { "name": "gmail", "data": "brenda.carolina.dts@gmail.com" },
+        "telephone": "613 400 4051",
+        "email": "brenda.carolina.dts@gmail.com" ,
+        "social":[
             { "name": "leetcode", "url": "https://leetcode.com/u/bcdt123/" , "user":"/bcdt123"},
             { "name": "linkein", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
             { "name": "github", "url": "https://github.com/BCDT123","user":"/BCDT123" }
             ]
-        },
+    },
   "about":{
         "detail": {
             "displayName": "About",
@@ -24,32 +24,82 @@
         "summary": "With over five years of experience in software development, I specialize in front-end development. Currently based in Ottawa, I am actively refreshing my skills and exploring new technologies, while also advancing my French at the Alliance Française. After a previous career pause dedicated to caring for my family, I am now ready to contribute a proactive, solutions-oriented approach to a team.",
         "skills": [
             {
-                "titulo": "Core Languages & Technologies",
+                "title": "Core Languages & Technologies",
                 "items": ["HTML","CSS","JavaScript","TypeScript","Java",".Net"]
             }, 
             {
-                "titulo": "Frameworks & Libraries",
+                "title": "Frameworks & Libraries",
                 "items": ["Jquery","React.js (Next.js, Vite)","Tailwind","Bootstrap"]
             }, 
             {
-                "titulo": "APIs & Data Handling",
+                "title": "APIs & Data Handling",
                 "items": ["JSON and Promise handling","Fetch / Axios","RESTful APIs"]
             }
             ],
-        "languajes": [
+        "languages": [
             {
                 "name": "English",
-                "nivel": "Professional"
+                "level": "Professional"
             }, 
             {
                 "name": "Spanish",
-                "nivel": "Native"
+                "level": "Native"
             },
             {
                 "name": "French",
-                "nivel": "Elementary"
+                "level": "Elementary"
             }
-            ]
+        ]
             
+    },
+    "experience":{
+        "detail": {
+            "displayName": "Experience",
+            "slug": "experience" 
+        },
+        "timeline": [
+            {
+                "title": "Front-End Developer",
+                "company": "Freelance",
+                "period": "2023 - Present",
+                "location": "Ottawa, ON, Canada",
+                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
+                "description": [
+                    "Developed and maintained responsive web applications using React.js and Next.js, ensuring cross-browser compatibility and optimal performance.",
+                    "Collaborated with clients to gather requirements, design user interfaces, and implement features that enhance user experience.",
+                    "Utilized Tailwind CSS to create visually appealing and consistent designs across various projects."
+                ]
+            },
+            {
+                "title": "Software Developer",
+                "company": "Tech Solutions Inc.",
+                "period": "2018 - 2022",
+                "location": "Ottawa, ON, Canada",
+                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
+                "description": [
+                    "Led the front-end development of multiple web applications, improving user engagement by 30% through intuitive design and functionality.",
+                    "Worked closely with back-end developers to integrate APIs and ensure seamless data flow between front-end and back-end systems.",
+                    "Implemented best practices for code quality, including code reviews, unit testing, and continuous integration."
+                ]
+            },
+            {
+                "title": "Junior Developer",
+                "company": "Web Innovators",
+                "period": "2016 - 2018",
+                "location": "Ottawa, ON, Canada",
+                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
+                "description": [
+                    "Assisted in the development of client websites using HTML, CSS, and JavaScript, contributing to a 15% increase in client satisfaction.",
+                    "Participated in team meetings to discuss project progress, challenges, and solutions, fostering a collaborative work environment.",
+                    "Maintained documentation for codebases and created user guides to facilitate knowledge sharing within the team."
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "detail": {
+            "displayName": "Projects",
+            "slug": "projects" 
         }
+    }
 }

@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 export type NavLinkProps = {
   href: string;
   children: ReactNode;
+  onLinkClick?: () => void;
   isActive?: boolean;
 };
  
@@ -12,40 +13,52 @@ export type DetailName = {
   slug: string;
   //data: AboutData //| ProjectsData | ExperienceData; // Aquí puedes usar una unión si hay más variantes
 };
+
 export type Profile = {
   name: string;
   titleJob:string;
   smDescription:string;
   contact: Contact;
-  about: AboutData;
+  about: About;
+  experience: Experience;
+  projects: Projects;
 };
 
 export type Contact = {
   detail: DetailName;
-  address: String
-  data: ContactData[];
+  address: String;
+  telephone: String;
+  email: String;
+  social: Social[];
 };
 
-export type ContactData = {
+export type Experience = {
+  detail: DetailName;
+};
+
+export type Projects = {
+  detail: DetailName;
+};
+
+export type Social = {
   name: string;
   url?: string;
   user?:string;
-  data?:string;
 };
 
-export type AboutData = {
+export type About = {
   detail: DetailName;
   summary: string;
   skills: SkillGroup[];
-  languajes: Language[];
+  languages: Language[];
 };
 
 export type SkillGroup = {
-  titulo: string;
+  title: string;
   items: string[];
 };
 
 export type Language = {
   name: string;
-  nivel: string;//"Native" | "Profesional" | "Elementary"| "Intermediate" | "Fluent";//forzar que solo se usen esos tres valores
+  level: string;//"Native" | "Profesional" | "Elementary"| "Intermediate" | "Fluent";//forzar que solo se usen esos tres valores
 };

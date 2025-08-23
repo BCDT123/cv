@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Roboto} from "next/font/google"
+import { Roboto } from "next/font/google";
 import "./globals.css";
 // Componentes
 import Header from "@/app/components/Header";
 
 const roboto = Roboto({
-  //subsets latin : incluye letras del alfabeto latino (A-Z, a-z), números y símbolos comunes. 
+  //subsets latin : incluye letras del alfabeto latino (A-Z, a-z), números y símbolos comunes.
   //Es útil para reducir el tamaño de la fuente descargada
   subsets: ["latin"],
-  display: "swap"// display swap: carga fuente default del sistema hasta que la fuente asignada se descarga
-})
+  display: "swap", // display swap: carga fuente default del sistema hasta que la fuente asignada se descarga
+});
 
 export const metadata: Metadata = {
   title: "CV Brenda",
@@ -17,10 +17,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "CV Brenda",
     description: "Explore my journey as FrontEnd Developer",
-    url: "https://misitio.com",//update
+    url: "https://misitio.com", //update
     images: [
       {
-        url: "https://misitio.com/og-image.jpg",//update
+        url: "https://misitio.com/og-image.jpg", //update
         width: 800,
         height: 600,
       },
@@ -28,11 +28,13 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} flex flex-col h-screen` }>
-        <Header/>
+      <body className={`${roboto.className} flex flex-col min-h-screen`}>
+        <Header />
         {children}
       </body>
     </html>
