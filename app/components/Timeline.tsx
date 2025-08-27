@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { MdOutlineWork } from "react-icons/md";
 import { TimelineItem } from "@/app/types";
+import PillContainer from "./PillContainer";
 
 type Props = {
   timeline: TimelineItem[];
@@ -71,18 +72,7 @@ export default function ExperienceTimeline({ timeline }: Props) {
                   ))}
                 </ul>
               </div>
-              <div className="flex flex-wrap mb-6 justify-center">
-                {item.skills
-                  ? item.skills.map((skill, index) => (
-                      <span
-                        key={index}
-                        className="bg-yellow-baby/50 rounded-xl px-2 py-1 text-xs m-1"
-                      >
-                        {skill}
-                      </span>
-                    ))
-                  : ""}
-              </div>
+              {item.skills && <PillContainer items={item.skills} />}
               <div className="bg-rose-sand w-8 h-8 rounded-xl absolute left-2 top-2 sm:hidden flex items-center justify-center text-white">
                 <MdOutlineWork size={20} />
               </div>

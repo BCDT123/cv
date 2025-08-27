@@ -3,31 +3,22 @@ import React, { useState } from "react";
 import { IoDiamond } from "react-icons/io5";
 import { getLanguages, getSkills, getSummary } from "@/app/lib/profile";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import PillContainer from "@/app/components/PillContainer";
 
 export default function AboutPage() {
   const [expanded, setExpanded] = useState<boolean>(false);
 
   const toggleExpanded = () => setExpanded((val) => !val);
 
-  const languagesList = getLanguages().map((l) => {
-    return (
-      <li key={l.name} className="rounded-lg bg-rose-sand/65 shadow-xl p-2">
-        {l.name} : {l.level}
-      </li>
-    );
+  const languagesList: string[] = getLanguages().map((l) => {
+    return `${l.name} : ${l.level} `;
   });
 
   const skillsList = getSkills().map((topic) => {
     return (
       <div key={topic.title}>
         <h3 className="pb-3">{topic.title}</h3>
-        <ul className="flex flex-row flex-wrap gap-3 items-center justify-center">
-          {topic.items.map((i) => (
-            <li key={i} className="rounded-lg bg-yellow-baby/50 shadow-xl p-2">
-              {i}
-            </li>
-          ))}
-        </ul>
+        <PillContainer items={topic.items} />
       </div>
     );
   });
@@ -77,7 +68,7 @@ export default function AboutPage() {
             Languages
           </h1>
           <ul className="flex flex-row flex-wrap gap-3 items-center justify-center pl-9 pr-9">
-            {languagesList}
+            <PillContainer items={languagesList} />
           </ul>
         </div>
       </div>
