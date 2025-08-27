@@ -1,12 +1,13 @@
 import React from "react";
 //Icons
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
-import { SiGmail, SiLeetcode } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 import { getContact } from "@/app/lib/profile";
 import { Contact } from "@/app/types";
+import { RotateElement } from "@/app/components/MotionComponents";
+import IconLink from "@/app/components/IconLink";
 
 export default function ContactPage() {
   const contactData: Contact = getContact();
@@ -15,26 +16,9 @@ export default function ContactPage() {
   const email = contactData.email;
 
   function getContactList() {
-    const contactSocial = contactData.social.map((item) => {
-      return (
-        <a
-          key={item.name}
-          href={item.url}
-          className="flex flex-row justify-center items-center gap-3 hover:text-yellow-mustard"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {item.name === "leetcode" ? (
-            <SiLeetcode size={40} />
-          ) : item.name === "github" ? (
-            <FaGithub size={40} />
-          ) : (
-            <FaLinkedinIn size={40} />
-          )}
-          <span> {item.user}</span>
-        </a>
-      );
-    });
+    const contactSocial = contactData.social.map((item) => (
+      <IconLink key={item.name} {...item} showUser={true} />
+    ));
 
     return contactSocial;
   }
@@ -42,15 +26,15 @@ export default function ContactPage() {
   return (
     <section className="flex flex-col grow justify-center items-center gap-5 m-10 ">
       <div className="flex flex-row  justify-center items-center gap-3 ">
-        <FaLocationDot size={40} />
+        <RotateElement element={<FaLocationDot size={40} />} />
         <span>{address}</span>
       </div>
       <div className="flex flex-row  justify-center items-center gap-3 ">
-        <BsFillTelephoneFill size={40} />
+        <RotateElement element={<BsFillTelephoneFill size={40} />} />
         <span> {telephone}</span>
       </div>
       <div className="flex flex-row  justify-center items-center gap-3 ">
-        <SiGmail size={40} />
+        <RotateElement element={<SiGmail size={40} />} />
         <span> {email}</span>
       </div>
       {getContactList()}

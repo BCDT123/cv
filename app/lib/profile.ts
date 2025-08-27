@@ -53,7 +53,9 @@ export function getCategoriesNames(): DetailName[]{
   const categories : DetailName[] = [];
   categories.push(getProfile().about.detail);
   categories.push(getProfile().experience.detail);
+  categories.push(getProfile().education.detail);
   categories.push(getProfile().projects.detail);
   categories.push(getProfile().contact.detail);
   return categories;
 }
+

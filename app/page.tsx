@@ -1,65 +1,43 @@
 import React from "react";
+import { ReactNode } from "react";
 //Icons
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
-// import foto from "@/public/yo.png"
-import { getName, getJobTitle, getContactInfo } from "@/app/lib/profile";
 import { FcBusinesswoman } from "react-icons/fc";
+//Components
+import Button from "@/app/components/Button";
+import IconLink from "@/app/components/IconLink";
+import { ScaleElement } from "@/app/components/MotionComponents";
+
+import {
+  getName,
+  getJobTitle,
+  getContactInfo,
+  getSmDesc,
+} from "@/app/lib/profile";
 
 export default function Home() {
   const name: String = getName();
   const job: String = getJobTitle();
+  const smDescription: String = getSmDesc();
 
-  function getContact() {
-    const contactList = getContactInfo().map((item) => {
-      return (
-        item.url && (
-          <a
-            key={item.name}
-            href={item.url}
-            className="flex flex-row gap-3 hover:text-yellow-mustard"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.name === "leetcode" ? (
-              <SiLeetcode size={40} />
-            ) : item.name === "github" ? (
-              <FaGithub size={40} />
-            ) : (
-              <FaLinkedinIn size={40} />
-            )}
-          </a>
-        )
-      );
-    });
-    return contactList;
-  }
+  const contactList = getContactInfo().map((item) => (
+    <IconLink key={item.name} {...item} showUser={false} />
+  ));
 
   // imagen breve info
   return (
-    <section
-      className="flex flex-col grow justify-center items-center 
-         md:flex-row"
-    >
+    <section className="flex flex-col grow justify-center items-center md:flex-row">
       <section className="flex flex-col justify-center items-center gap-5 m-10 ">
-        <h2 className="text-yellow-mustard text-4xl">Hello, I'm</h2>
-        <h1 className="text-6xl uppercase text-center text-bold text-balance text-pretty">
+        <h2 className="text-5xl text-green-wash">Hello, I'm</h2>
+        <h1 className="text-7xl uppercase text-center text-bold text-balance text-pretty text-yellow-mustard">
           {name}
         </h1>
-        <h3 className="text-green-wash text-2xl">{job}</h3>
-        <div className="flex flex-row justify-start gap-4 ">{getContact()}</div>
-        <button className="rounded-lg bg-green-wash/30 tracking-widest uppercase shadow-xl px-4 py-3 hover:bg-yellow-mustard/50 hover:text-rose-sligth">
-          {" "}
-          Download CV
-        </button>
+        <h2 className="text-green-wash text-5xl">{job}</h2>
+        <h3 className="text-green-wash text-2xl">{smDescription}</h3>
+        <div className="flex flex-row justify-start gap-4 ">{contactList}</div>
+        <ScaleElement element={<Button text="Download CV" />} />
       </section>
       <section className="justify-center items-center hidden md:block">
         <FcBusinesswoman size={400} />
-        {/* <img
-              src={foto.src}
-              alt="name"
-              className="object-bottom-right  max-w-2xl"
-          /> */}
       </section>
     </section>
   );

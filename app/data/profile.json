@@ -1,7 +1,7 @@
 {
   "name": "Brenda Del Toro",
   "titleJob":"Front-End Developer",
-  "smDescription":"Exploring AI & QA | Advocate for Smart Innovation",
+  "smDescription":"Exploring AI & QA | Advocate for Smart Innovation | Love pastries & nature",
   "contact":{
         "detail": {
             "displayName": "Contact",
@@ -12,7 +12,7 @@
         "email": "brenda.carolina.dts@gmail.com" ,
         "social":[
             { "name": "leetcode", "url": "https://leetcode.com/u/bcdt123/" , "user":"/bcdt123"},
-            { "name": "linkein", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
+            { "name": "linkedin", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
             { "name": "github", "url": "https://github.com/BCDT123","user":"/BCDT123" }
             ]
     },
@@ -61,7 +61,7 @@
             {
                 "title": "Front-End Developer",
                 "company": "Freelance",
-                "period": "2023 - Present",
+                "period": "March 2023 - Present",
                 "location": "Ottawa, ON, Canada",
                 "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
                 "description": [
@@ -73,7 +73,7 @@
             {
                 "title": "Software Developer",
                 "company": "Tech Solutions Inc.",
-                "period": "2018 - 2022",
+                "period": "Jun 2018 - July 2022",
                 "location": "Ottawa, ON, Canada",
                 "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
                 "description": [
@@ -85,13 +85,31 @@
             {
                 "title": "Junior Developer",
                 "company": "Web Innovators",
-                "period": "2016 - 2018",
+                "period": "Aug 2016 - Feb 2018",
                 "location": "Ottawa, ON, Canada",
                 "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
                 "description": [
                     "Assisted in the development of client websites using HTML, CSS, and JavaScript, contributing to a 15% increase in client satisfaction.",
                     "Participated in team meetings to discuss project progress, challenges, and solutions, fostering a collaborative work environment.",
                     "Maintained documentation for codebases and created user guides to facilitate knowledge sharing within the team."
+                ]
+            }
+        ]
+    },
+    "education": {
+        "detail": {
+            "displayName": "Education",
+            "slug": "education" 
+        },
+        "timeline": [
+            {
+                "title": "Bachelor's Degree in Computer Science",
+                "period": "2012 - 2016",
+                "location": "University of Buenos Aires, Argentina",
+                "description": [
+                    "Graduated with a Bachelor's degree in Computer Science, acquiring a solid foundation in programming and software development.",
+                    "Participated in various coding competitions and hackathons, honing problem-solving and coding skills.",
+                    "Completed coursework in algorithms, data structures, and database management systems."
                 ]
             }
         ]

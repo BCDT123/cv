@@ -20,6 +20,7 @@ export type Profile = {
   smDescription:string;
   contact: Contact;
   about: About;
+  education: Education;
   experience: Experience;
   projects: Projects;
 };
@@ -32,8 +33,23 @@ export type Contact = {
   social: Social[];
 };
 
+export type Education = {
+  detail: DetailName;
+  timeline: TimelineItem[];
+};
+
 export type Experience = {
   detail: DetailName;
+  timeline: TimelineItem[];
+};
+
+export type TimelineItem = {
+  title: string;
+  company?: string;
+  period: string;
+  location: string;
+  skills?: string[];
+  description: string[];
 };
 
 export type Projects = {
@@ -62,3 +78,9 @@ export type Language = {
   name: string;
   level: string;//"Native" | "Profesional" | "Elementary"| "Intermediate" | "Fluent";//forzar que solo se usen esos tres valores
 };
+
+
+
+export type ScaleElementProps = {
+  element: ReactNode;
+}
