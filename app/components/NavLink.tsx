@@ -12,8 +12,8 @@ export default function NavLink({
       href={href}
       onClick={onLinkClick}
       className={`${
-        isActive ? "md:shadow-[0_4px_0_#637077] " : "text-rose-sand contrast-70"
-      } px-4 py-2 text-sm uppercase transition-colors cursor-pointer hover:text-gray-neutro  md:hover:shadow-[0_4px_0_#637077]`}
+        isActive ? "font-bold " : "text-rose-sand contrast-70"
+      } px-4 py-2 text-md tracking-widest uppercase transition-colors cursor-pointer hover:text-gray-neutro hover:font-bold `}
     >
       {children}
     </Link>

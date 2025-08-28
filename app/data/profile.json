@@ -18,7 +18,7 @@
     },
   "about":{
         "detail": {
-            "displayName": "About",
+            "displayName": "About Me",
             "slug": "about" 
         },
         "summary": "With over five years of experience in software development, I specialize in front-end development. Currently based in Ottawa, I am actively refreshing my skills and exploring new technologies, while also advancing my French at the Alliance Française. After a previous career pause dedicated to caring for my family, I am now ready to contribute a proactive, solutions-oriented approach to a team.",
@@ -117,7 +117,33 @@
     "projects": {
         "detail": {
             "displayName": "Projects",
-            "slug": "projects" 
-        }
+            "slug": "portfolio" 
+        },
+        "projectsData": [
+            {
+                "name": "Personal Portfolio Website",
+                "url": "https://github.com/BCDT123/cv",
+                "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
+                "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
+                "image": "/portfolio-1.png",
+                  "repository": "github"
+            },
+            {
+                "name": "E-commerce Platform",
+                "url": "",
+                "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
+                "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
+                "image": "/portfolio-1.png",
+                "repository": "github"
+            },
+            {
+                "name": "E-commerce Platform",
+                "url": "",
+                "description": "Developed a full-featured e-commerce platform with user authentication, product listings, and a shopping cart. Utilized Next.js for server-side rendering and improved SEO.",
+                "technologies": ["Next.js", "React.js", "TypeScript", "Stripe API"],
+                "image": "/portfolio-1.png",
+                "repository": "github"
+            }
+        ]
     }
 }

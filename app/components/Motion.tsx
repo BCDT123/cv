@@ -4,7 +4,11 @@ import type { ScaleElementProps } from "@/app/types";
 
 export function ScaleElement({ element }: ScaleElementProps) {
   return (
-    <motion.div whileHover={{ scale: 1.2 }} whileTap={{ scale: 0.8 }}>
+    <motion.div
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.8 }}
+      style={{ transformOrigin: "left" }}
+    >
       {element}
     </motion.div>
   );

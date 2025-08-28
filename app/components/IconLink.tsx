@@ -1,7 +1,9 @@
 import { ReactNode } from "react";
+//Icons
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
-import { RotateElement } from "@/app/components/MotionComponents";
+//components
+import { RotateElement } from "@/app/components/Motion";
 
 export default function IconLink({
   name,

@@ -1,20 +1,19 @@
-// Componentes
+// Components
 import Timeline from "@/app/components/Timeline";
 
-// Dados
-import profile from "@/app/data/profile.json";
+// Data
+import { getExperienceTimeline } from "@/app/lib/profile";
+import { TimelineItem } from "../types";
 
 export default function ExperiencePage() {
-  const timeline = profile.experience.timeline;
+  const timeline: TimelineItem[] = getExperienceTimeline();
 
   return (
-    <>
-      <section className="m-10 ">
-        <h1 className="text-2xl font-bold uppercase mb-8 text-center">
-          Experience
-        </h1>
-        <Timeline timeline={timeline} />
-      </section>
-    </>
+    <section className="m-10 ">
+      <h1 className="text-2xl font-bold uppercase mb-8 text-center">
+        Experience
+      </h1>
+      <Timeline timeline={timeline} />
+    </section>
   );
 }

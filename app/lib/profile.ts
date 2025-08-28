@@ -1,6 +1,7 @@
 // Datos
 import profileData from "@/app/data/profile.json";
-import { Social, Contact, DetailName, Profile , SkillGroup, Language} from "@/app/types";
+import { Social, Contact, DetailName, Profile , SkillGroup, Language, 
+  TimelineItem, Project} from "@/app/types";
 
 //fetch data
 export function getProfile(): Profile {
@@ -52,10 +53,21 @@ export function getSummary(): String {
 export function getCategoriesNames(): DetailName[]{
   const categories : DetailName[] = [];
   categories.push(getProfile().about.detail);
-  categories.push(getProfile().experience.detail);
-  categories.push(getProfile().education.detail);
+  // categories.push(getProfile().experience.detail);
+  // categories.push(getProfile().education.detail);
   categories.push(getProfile().projects.detail);
   categories.push(getProfile().contact.detail);
   return categories;
 }
 
+export function getExperienceTimeline(): TimelineItem[]{
+  return getProfile().experience.timeline;
+}
+
+export function getEducationTimeline(): TimelineItem[]{
+  return getProfile().education.timeline;
+}
+
+export function getProjects(): Project[] {
+  return getProfile().projects.projectsData;
+}

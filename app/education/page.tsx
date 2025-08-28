@@ -1,20 +1,19 @@
-// Componentes
+// Components
 import Timeline from "@/app/components/Timeline";
 
-// Dados
-import profile from "@/app/data/profile.json";
+// Data
+import { getEducationTimeline } from "../lib/profile";
+import { TimelineItem } from "../types";
 
 export default function EducationPage() {
-  const timeline = profile.education.timeline;
+  const timeline: TimelineItem[] = getEducationTimeline();
 
   return (
-    <>
-      <section className="m-10 ">
-        <h1 className="text-2xl font-bold uppercase mb-8 text-center">
-          Education
-        </h1>
-        <Timeline timeline={timeline} />
-      </section>
-    </>
+    <section className="m-10 ">
+      <h1 className="text-2xl font-bold uppercase mb-8 text-center">
+        Education
+      </h1>
+      <Timeline timeline={timeline} />
+    </section>
   );
 }

@@ -1,4 +1,3 @@
-
 import type { ReactNode } from "react";
 
 export type NavLinkProps = {
@@ -54,7 +53,17 @@ export type TimelineItem = {
 
 export type Projects = {
   detail: DetailName;
+  projectsData: Project[];
 };
+
+export type Project = {
+  name: string;
+  description: string;
+  image: string;
+  url?: string;
+  repository?: string;
+  technologies: string[];
+}
 
 export type Social = {
   name: string;
@@ -78,7 +87,6 @@ export type Language = {
   name: string;
   level: string;//"Native" | "Profesional" | "Elementary"| "Intermediate" | "Fluent";//forzar que solo se usen esos tres valores
 };
-
 
 
 export type ScaleElementProps = {

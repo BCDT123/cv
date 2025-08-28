@@ -3,10 +3,11 @@ import React from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { SiGmail } from "react-icons/si";
 import { BsFillTelephoneFill } from "react-icons/bs";
-
+//Data
 import { getContact } from "@/app/lib/profile";
 import { Contact } from "@/app/types";
-import { RotateElement } from "@/app/components/MotionComponents";
+//components
+import { RotateElement } from "@/app/components/Motion";
 import IconLink from "@/app/components/IconLink";
 
 export default function ContactPage() {

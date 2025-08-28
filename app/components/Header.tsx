@@ -21,7 +21,7 @@ export default function Header() {
   function NavLinks() {
     return (
       <>
-        <li key="Home" className="text-sm uppercase cursor-pointer">
+        <li key="Home">
           <NavLink
             href="/"
             isActive={pathname.endsWith(`/`)}
@@ -31,10 +31,7 @@ export default function Header() {
           </NavLink>
         </li>
         {categories.map((category) => (
-          <li
-            key={category.displayName}
-            className="text-sm uppercase cursor-pointer"
-          >
+          <li key={category.displayName}>
             <NavLink
               href={category.slug}
               isActive={pathname.endsWith(`/${category.slug}`)}
@@ -48,7 +45,7 @@ export default function Header() {
     );
   }
   return (
-    <header className="flex items-center justify-between w-full sticky top-0 z-50 p-4 pr-10 pl-10 gap-3 bg-rose-slight shadow-md">
+    <header className="flex h-[10vh] items-center justify-between w-full sticky top-0 z-50 p-4 pr-10 pl-10 gap-3 bg-rose-slight shadow-md">
       <div className="uppercase text-xl tracking-widest">
         <h5>{name[0]}</h5>
       </div>
@@ -64,7 +61,7 @@ export default function Header() {
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
-        } flex-col absolute top-16 right-0 z-40 bg-rose-slight shadow-md gap-3 p-4 transition-all duration-300 ease-in-out
+        } flex-col absolute top-16 right-0 z-40 bg-rose-slight shadow-md gap-3 transition-all duration-300 ease-in-out
           md:flex md:flex-row md:static md:shadow-none`}
       >
         <ul className="flex flex-col gap-2 md:flex-row ">{NavLinks()}</ul>
