@@ -12,8 +12,8 @@ export default function IconLink({
   showUser,
 }: {
   name: string;
-  url: string;
-  user: string;
+  url?: string;
+  user?: string;
   showUser?: boolean;
 }) {
   return (

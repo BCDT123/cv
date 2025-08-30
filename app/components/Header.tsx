@@ -45,7 +45,7 @@ export default function Header() {
     );
   }
   return (
-    <header className="flex h-[10vh] items-center justify-between w-full sticky top-0 z-50 p-4 pr-10 pl-10 gap-3 bg-rose-slight shadow-md">
+    <header className="flex h-[10vh] items-center justify-between w-full sticky top-0 z-50 p-4 pr-10 pl-10 gap-3 bg-rose-slight">
       <div className="uppercase text-xl tracking-widest">
         <h5>{name[0]}</h5>
       </div>

@@ -1,149 +1,249 @@
 {
   "name": "Brenda Del Toro",
-  "titleJob":"Front-End Developer",
-  "smDescription":"Exploring AI & QA | Advocate for Smart Innovation | Love pastries & nature",
-  "contact":{
-        "detail": {
-            "displayName": "Contact",
-            "slug": "contact" 
-        },
-        "address":"Ottawa, ON, Canada",
-        "telephone": "613 400 4051",
-        "email": "brenda.carolina.dts@gmail.com" ,
-        "social":[
-            { "name": "leetcode", "url": "https://leetcode.com/u/bcdt123/" , "user":"/bcdt123"},
-            { "name": "linkedin", "url": "https://www.linkedin.com/in/brendasantana/" , "user":"/brendasantana" },
-            { "name": "github", "url": "https://github.com/BCDT123","user":"/BCDT123" }
-            ]
+  "titleJob": "Front-End Developer",
+  "smDescription": "Exploring AI & QA | Advocate for Smart Innovation | Love pastries & nature",
+  "contact": {
+    "detail": {
+      "displayName": "Contact",
+      "slug": "contact"
     },
-  "about":{
-        "detail": {
-            "displayName": "About Me",
-            "slug": "about" 
-        },
-        "summary": "With over five years of experience in software development, I specialize in front-end development. Currently based in Ottawa, I am actively refreshing my skills and exploring new technologies, while also advancing my French at the Alliance Française. After a previous career pause dedicated to caring for my family, I am now ready to contribute a proactive, solutions-oriented approach to a team.",
+    "address": "Ottawa, ON, Canada",
+    "telephone": "613 400 4051",
+    "email": "brenda.carolina.dts@gmail.com",
+    "social": [
+      {
+        "name": "leetcode",
+        "url": "https://leetcode.com/u/bcdt123/",
+        "user": "/bcdt123"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/brendasantana/",
+        "user": "/brendasantana"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/BCDT123",
+        "user": "/BCDT123"
+      }
+    ]
+  },
+  "about": {
+    "detail": {
+      "displayName": "About Me",
+      "slug": "about"
+    },
+    "summary": "With over five years of experience in software development, I specialize in front-end development. Currently based in Ottawa, I am actively refreshing my skills and exploring new technologies, while also advancing my French at the Alliance Française. After a previous career pause dedicated to caring for my family, I am now ready to contribute a proactive, solutions-oriented approach to a team.",
+    "skills": [
+      {
+        "title": "Core Languages & Technologies",
+        "items": ["HTML", "CSS", "JavaScript", "TypeScript", "Java", ".Net"]
+      },
+      {
+        "title": "Frameworks & Libraries",
+        "items": ["Jquery", "React.js (Next.js, Vite)", "Tailwind", "Bootstrap"]
+      },
+      {
+        "title": "APIs & Data Handling",
+        "items": ["JSON and Promise handling", "Fetch / Axios", "RESTful APIs"]
+      }
+    ],
+    "languages": [
+      {
+        "name": "English",
+        "level": "Professional"
+      },
+      {
+        "name": "Spanish",
+        "level": "Native"
+      },
+      {
+        "name": "French",
+        "level": "Elementary"
+      }
+    ]
+  },
+  "experience": {
+    "detail": {
+      "displayName": "Experience",
+      "slug": "experience"
+    },
+    "timeline": [
+      {
+        "title": "Front-End Developer",
+        "company": "Freelance",
+        "period": "March 2023 - Present",
+        "location": "Ottawa, ON, Canada",
         "skills": [
-            {
-                "title": "Core Languages & Technologies",
-                "items": ["HTML","CSS","JavaScript","TypeScript","Java",".Net"]
-            }, 
-            {
-                "title": "Frameworks & Libraries",
-                "items": ["Jquery","React.js (Next.js, Vite)","Tailwind","Bootstrap"]
-            }, 
-            {
-                "title": "APIs & Data Handling",
-                "items": ["JSON and Promise handling","Fetch / Axios","RESTful APIs"]
-            }
-            ],
-        "languages": [
-            {
-                "name": "English",
-                "level": "Professional"
-            }, 
-            {
-                "name": "Spanish",
-                "level": "Native"
-            },
-            {
-                "name": "French",
-                "level": "Elementary"
-            }
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "description": [
+          "Developed and maintained responsive web applications using React.js and Next.js, ensuring cross-browser compatibility and optimal performance.",
+          "Collaborated with clients to gather requirements, design user interfaces, and implement features that enhance user experience.",
+          "Utilized Tailwind CSS to create visually appealing and consistent designs across various projects."
         ]
-            
+      },
+      {
+        "title": "Software Developer",
+        "company": "Tech Solutions Inc.",
+        "period": "Jun 2018 - July 2022",
+        "location": "Ottawa, ON, Canada",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "description": [
+          "Led the front-end development of multiple web applications, improving user engagement by 30% through intuitive design and functionality.",
+          "Worked closely with back-end developers to integrate APIs and ensure seamless data flow between front-end and back-end systems.",
+          "Implemented best practices for code quality, including code reviews, unit testing, and continuous integration."
+        ]
+      },
+      {
+        "title": "Junior Developer",
+        "company": "Web Innovators",
+        "period": "Aug 2016 - Feb 2018",
+        "location": "Ottawa, ON, Canada",
+        "skills": [
+          "React.js",
+          "Next.js",
+          "Tailwind CSS",
+          "JavaScript",
+          "TypeScript"
+        ],
+        "description": [
+          "Assisted in the development of client websites using HTML, CSS, and JavaScript, contributing to a 15% increase in client satisfaction.",
+          "Participated in team meetings to discuss project progress, challenges, and solutions, fostering a collaborative work environment.",
+          "Maintained documentation for codebases and created user guides to facilitate knowledge sharing within the team."
+        ]
+      }
+    ]
+  },
+  "education": {
+    "detail": {
+      "displayName": "Education",
+      "slug": "education"
     },
-    "experience":{
-        "detail": {
-            "displayName": "Experience",
-            "slug": "experience" 
-        },
-        "timeline": [
-            {
-                "title": "Front-End Developer",
-                "company": "Freelance",
-                "period": "March 2023 - Present",
-                "location": "Ottawa, ON, Canada",
-                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
-                "description": [
-                    "Developed and maintained responsive web applications using React.js and Next.js, ensuring cross-browser compatibility and optimal performance.",
-                    "Collaborated with clients to gather requirements, design user interfaces, and implement features that enhance user experience.",
-                    "Utilized Tailwind CSS to create visually appealing and consistent designs across various projects."
-                ]
-            },
-            {
-                "title": "Software Developer",
-                "company": "Tech Solutions Inc.",
-                "period": "Jun 2018 - July 2022",
-                "location": "Ottawa, ON, Canada",
-                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
-                "description": [
-                    "Led the front-end development of multiple web applications, improving user engagement by 30% through intuitive design and functionality.",
-                    "Worked closely with back-end developers to integrate APIs and ensure seamless data flow between front-end and back-end systems.",
-                    "Implemented best practices for code quality, including code reviews, unit testing, and continuous integration."
-                ]
-            },
-            {
-                "title": "Junior Developer",
-                "company": "Web Innovators",
-                "period": "Aug 2016 - Feb 2018",
-                "location": "Ottawa, ON, Canada",
-                "skills": ["React.js","Next.js","Tailwind CSS","JavaScript","TypeScript"],
-                "description": [
-                    "Assisted in the development of client websites using HTML, CSS, and JavaScript, contributing to a 15% increase in client satisfaction.",
-                    "Participated in team meetings to discuss project progress, challenges, and solutions, fostering a collaborative work environment.",
-                    "Maintained documentation for codebases and created user guides to facilitate knowledge sharing within the team."
-                ]
-            }
+    "timeline": [
+      {
+        "title": "Bachelor's Degree in Computer Science",
+        "period": "2012 - 2016",
+        "location": "University of Buenos Aires, Argentina",
+        "description": [
+          "Graduated with a Bachelor's degree in Computer Science, acquiring a solid foundation in programming and software development.",
+          "Participated in various coding competitions and hackathons, honing problem-solving and coding skills.",
+          "Completed coursework in algorithms, data structures, and database management systems."
         ]
+      }
+    ]
+  },
+  "projects": {
+    "detail": {
+      "displayName": "Projects",
+      "slug": "portfolio"
     },
-    "education": {
-        "detail": {
-            "displayName": "Education",
-            "slug": "education" 
-        },
-        "timeline": [
-            {
-                "title": "Bachelor's Degree in Computer Science",
-                "period": "2012 - 2016",
-                "location": "University of Buenos Aires, Argentina",
-                "description": [
-                    "Graduated with a Bachelor's degree in Computer Science, acquiring a solid foundation in programming and software development.",
-                    "Participated in various coding competitions and hackathons, honing problem-solving and coding skills.",
-                    "Completed coursework in algorithms, data structures, and database management systems."
-                ]
-            }
-        ]
+    "projectsData": [
+      {
+        "name": "Personal Portfolio Website",
+        "url": "https://github.com/BCDT123/cv",
+        "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
+        "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
+        "image": "/portfolio-1.png",
+        "repository": "github"
+      },
+      {
+        "name": "E-commerce Platform",
+        "url": "",
+        "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
+        "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
+        "image": "/portfolio-1.png",
+        "repository": "github"
+      },
+      {
+        "name": "E-commerce Platform",
+        "url": "",
+        "description": "Developed a full-featured e-commerce platform with user authentication, product listings, and a shopping cart. Utilized Next.js for server-side rendering and improved SEO.",
+        "technologies": ["Next.js", "React.js", "TypeScript", "Stripe API"],
+        "image": "/portfolio-1.png",
+        "repository": "github"
+      }
+    ]
+  },
+  "certifications": {
+    "detail": {
+      "displayName": "Certifications",
+      "slug": "certifications"
     },
-    "projects": {
-        "detail": {
-            "displayName": "Projects",
-            "slug": "portfolio" 
-        },
-        "projectsData": [
-            {
-                "name": "Personal Portfolio Website",
-                "url": "https://github.com/BCDT123/cv",
-                "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
-                "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
-                "image": "/portfolio-1.png",
-                  "repository": "github"
-            },
-            {
-                "name": "E-commerce Platform",
-                "url": "",
-                "description": "A personal portfolio website showcasing my projects, skills, and experience. Built with React.js and Tailwind CSS to ensure a responsive and visually appealing design.",
-                "technologies": ["React.js", "Tailwind CSS", "JavaScript"],
-                "image": "/portfolio-1.png",
-                "repository": "github"
-            },
-            {
-                "name": "E-commerce Platform",
-                "url": "",
-                "description": "Developed a full-featured e-commerce platform with user authentication, product listings, and a shopping cart. Utilized Next.js for server-side rendering and improved SEO.",
-                "technologies": ["Next.js", "React.js", "TypeScript", "Stripe API"],
-                "image": "/portfolio-1.png",
-                "repository": "github"
-            }
-        ]
-    }
+    "items": [
+      {
+        "title": "Responsive Web Design",
+        "issuer": "freeCodeCamp",
+        "year": "2023",
+        "url": "https://www.freecodecamp.org/certification/bcdt123/responsive-web-design"
+      },
+      {
+        "title": "JavaScript Algorithms and Data Structures",
+        "issuer": "freeCodeCamp",
+        "year": "2024",
+        "url": "https://www.freecodecamp.org/certification/bcdt123/javascript-algorithms"
+      }
+    ]
+  },
+  "testimonials": {
+    "detail": {
+      "displayName": "Testimonials",
+      "slug": "testimonials"
+    },
+    "quotes": [
+      {
+        "name": "Ana Martínez",
+        "role": "Project Manager at Tech Solutions Inc.",
+        "quote": "Brenda consistently delivered high-quality work and brought fresh ideas to every project. Her attention to detail and collaborative spirit made her an invaluable team member."
+      },
+      {
+        "name": "Carlos Gómez",
+        "role": "Freelance Client",
+        "quote": "Working with Brenda was a pleasure. She understood our needs quickly and built a beautiful, functional site that exceeded expectations."
+      }
+    ]
+  },
+  "interests": {
+    "detail": {
+      "displayName": "Interests",
+      "slug": "interests"
+    },
+    "items": [
+      "AI Ethics",
+      "Quality Assurance",
+      "Pastry Baking",
+      "Nature Walks",
+      "Language Learning"
+    ]
+  },
+  "availability": {
+    "detail": {
+      "displayName": "Availability",
+      "slug": "availability"
+    },
+    "status": "Open to freelance and full-time opportunities",
+    "preferredLocation": "Remote or Ottawa-based",
+    "startDate": "Immediately"
+  },
+  "achievements": {
+    "detail": {
+      "displayName": "Achievements",
+      "slug": "achievements"
+    },
+    "items": [
+      "Won 2nd place in the Ottawa Hackathon 2021",
+      "Built a React component library used by 3 freelance clients",
+      "Mentored junior developers through a local coding bootcamp"
+    ]
+  }
 }

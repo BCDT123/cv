@@ -8,15 +8,15 @@ export function getProfile(): Profile {
     return profileData
 }
 
-export function getName(): String {
+export function getName(): string {
     return getProfile().name
 }
 
-export function getJobTitle(): String {
+export function getJobTitle(): string {
     return getProfile().titleJob
 }
 
-export function getSmDesc(): String {
+export function getSmDesc(): string {
     return getProfile().smDescription
 }
 
