@@ -26,9 +26,9 @@ export type Profile = {
 
 export type Contact = {
   detail: DetailName;
-  address: String;
-  telephone: String;
-  email: String;
+  address: string;
+  telephone: string;
+  email: string;
   social: Social[];
 };
 

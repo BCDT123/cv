@@ -13,7 +13,7 @@ export default function NavLink({
       onClick={onLinkClick}
       className={`${
         isActive ? "font-bold " : "text-rose-sand contrast-70"
-      } px-4 py-2 text-md tracking-widest uppercase transition-colors cursor-pointer hover:text-gray-neutro hover:font-bold `}
+      } px-4 py-2 text-md xs:text-xs tracking-widest uppercase transition-colors cursor-pointer hover:text-gray-neutro hover:font-bold `}
     >
       {children}
     </Link>

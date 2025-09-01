@@ -5,7 +5,6 @@ let cachedProfile: Profile | null = null;
 export async function getProfile(): Promise<Profile> {  
   if (cachedProfile) return cachedProfile;
   try {
-    console.log("update to get data from api")
     const response = await import("@/app/lib/profile.json");
     const profile: Profile = response.default;
 
@@ -20,5 +19,3 @@ export async function getProfile(): Promise<Profile> {
     throw new Error("No se pudo cargar el perfil");
   }
 }
-
-

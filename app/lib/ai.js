@@ -4,7 +4,7 @@ import { InferenceClient } from "@huggingface/inference";
 /// anthropic IA add 5 dollar to use the app
 // hugface free IA
 //npm install @huggingface/inference
-import profile from "../data/profile.json";
+import profile from "../lib/profile.json";
 
 const SYSTEM_PROMPT = `
 You are an intelligent assistant that receives two inputs:
